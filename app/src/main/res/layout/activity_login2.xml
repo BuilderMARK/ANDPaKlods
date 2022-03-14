@@ -6,4 +6,23 @@
     android:layout_height="match_parent"
     tools:context=".Login">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Skip laver ikke login eller signup, tror det rimeligt kan fikset man lad os nu se, men endtil videre stiller vi det bare til en anden page så tryk på next knappen"
+/>
+    <Button
+        android:id="@+id/Next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/SomeKindOfYellow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.893"
+        android:text="Next"
+        />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
