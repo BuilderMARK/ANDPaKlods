@@ -36,9 +36,9 @@ public class Items extends AppCompatActivity implements View.OnClickListener{
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.searchImageButtonCola:
+                cola++;
                 Toast.makeText(this, "Antal Cola "+cola,Toast.LENGTH_SHORT).show();
                 System.out.printf("Antal Cola" + cola );
-                cola++;
                 break;
             case R.id.searchImageButtonMenta:
                 Menta++;
