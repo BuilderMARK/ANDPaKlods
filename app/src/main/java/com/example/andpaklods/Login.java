@@ -31,6 +31,7 @@ GoogleSignInClient googleSignInClient;
         Button signUp = findViewById(R.id.SignUP);
         login.setOnClickListener(this);
         signUp.setOnClickListener(this);
+        googleLogin.setOnClickListener(this);
     }
 
 
