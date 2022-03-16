@@ -16,24 +16,25 @@ public class SignUp extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
+
+        //Buttons and input fields
         Button login = findViewById(R.id.SignupButtonOnSignup);
         EditText name = findViewById(R.id.NameFromSignup);
         EditText email = findViewById(R.id.EmailFromSignup);
         EditText password = findViewById(R.id.PasswordFromSignup);
-// ...
+
+        //Firebase database reference
         mDatabase = FirebaseDatabase.getInstance().getReference();
 
-
-
+        //Signup button event listener
         login.setOnClickListener(view -> {
-            System.out.println(name.getText());
-            System.out.println(email.getText());
-            System.out.println(password.getText());
+            //Creating User Object
             User u = new User();
             u.username = name.getText().toString();
             u.email = email.getText().toString();
             u.password = password.getText().toString();
 
+            //Pushing to firebase (This might need to be reworked - Not optimal)
             mDatabase.child("users").child(u.username).setValue(u);
         });
 
