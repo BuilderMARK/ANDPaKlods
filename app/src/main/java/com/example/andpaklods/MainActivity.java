@@ -14,7 +14,7 @@ private Button LoginBtn,CreateSale;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         LoginBtn = findViewById(R.id.LoginBtn);
-        CreateSale = findViewById(R.id.BtnCreate);
+        CreateSale = findViewById(R.id.BtnCreateSale);
         LoginBtn.setOnClickListener(this);
         CreateSale.setOnClickListener(this);
             }
@@ -22,7 +22,7 @@ private Button LoginBtn,CreateSale;
     @Override
     public void onClick(View view) {
         switch (view.getId()){
-            case R.id.BtnCreate:
+            case R.id.BtnCreateSale:
                 startActivity(new Intent(this,CreateSaleOffer.class));
                 break;
             case R.id.LoginBtn:

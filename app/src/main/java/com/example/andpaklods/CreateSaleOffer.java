@@ -11,33 +11,27 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class CreateSaleOffer extends AppCompatActivity {
-Button createSaleOfferBtn;
-EditText productName, Info,Price,Catagory;
 DatabaseReference firebaseRefernce;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_sale_offer);
 
-        createSaleOfferBtn.findViewById(R.id.BtnCreate);
-        productName.findViewById(R.id.WriteProductName);
-        Info.findViewById(R.id.WriteInfo);
-        Price.findViewById(R.id.WritePrice);
-        Catagory.findViewById(R.id.Writecatagory);
+        Button createSaleOfferBtn = findViewById(R.id.BtnCreateSaleOffers);
+        EditText productName= findViewById(R.id.WriteProductName);
+        EditText Info = findViewById(R.id.WriteInfo);
+        EditText Price = findViewById(R.id.WritePrice);
+        EditText Catagory = findViewById(R.id.Writecatagory);
         firebaseRefernce = FirebaseDatabase.getInstance().getReference();
 
-
-
-        createSaleOfferBtn.setOnClickListener(view ->
-                System.out.println(productName.getText()));
-                System.out.println(Info.getText());
-                System.out.println(Catagory.getText());
-                System.out.println(Price.getText());
+        createSaleOfferBtn.setOnClickListener(view ->{
                 Item item = new Item();
                 item.Catagory = Catagory.getText().toString();
                 item.Info = Info.getText().toString();
                 item.ProductName = productName.getText().toString();
-                item.Price = Integer.parseInt(Price.getText().toString());
+                item.Price = Price.getText().toString();
                 firebaseRefernce.child("SaleOffers").child("CreateOfferTest").setValue(item);
+    });
     }
 }
