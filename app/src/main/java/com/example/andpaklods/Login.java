@@ -1,7 +1,5 @@
 package com.example.andpaklods;
 
-import androidx.activity.result.contract.ActivityResultContracts;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -46,9 +44,11 @@ GoogleSignInClient googleSignInClient;
             case R.id.SignUP:
                 startActivity(new Intent(this,SignUp.class));
                 Toast.makeText(this, "Signup",Toast.LENGTH_SHORT).show();
+                break;
             case R.id.GoogleLogin:
                 finish();
                 signIn();
+                break;
 
 
         }
@@ -75,7 +75,7 @@ GoogleSignInClient googleSignInClient;
     }
     void navigateTosecondActivity(){
         finish();
-        Intent intent = new Intent(Login.this,SignUp.class);
+        Intent intent = new Intent(Login.this,Login.class);
         startActivity(intent);
 
     }

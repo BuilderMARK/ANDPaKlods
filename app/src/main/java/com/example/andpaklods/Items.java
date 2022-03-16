@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
+import com.example.andpaklods.R;
+
 public class Items extends AppCompatActivity implements View.OnClickListener{
     int Mokai = 0;
     int cola = 0;

@@ -1,3 +1,5 @@
+package com.example.andpaklods;
+
 public class Item {
     private String Ean,Navn,Navn2;
     private int Pris,VareHierkiId;
