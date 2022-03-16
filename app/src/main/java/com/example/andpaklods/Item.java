@@ -1,57 +1,48 @@
 package com.example.andpaklods;
 
 public class Item {
-    private String Ean,Navn,Navn2;
-    private int Pris,VareHierkiId;
+    public String Info, Catagory, ProductName;
+    public int Price;
 
-    public Item(String ean, String navn, String navn2, int pris, int vareHierkiId) {
-        Ean = ean;
-        Navn = navn;
-        Navn2 = navn2;
-        Pris = pris;
-        VareHierkiId = vareHierkiId;
+    public Item(String info, String catagory, String productName, int price) {
+        this.Info = info;
+        this.Catagory = catagory;
+        this.ProductName = productName;
+        this.Price = price;
     }
 
     public Item() {
     }
 
-    public String getEan() {
-        return Ean;
+    public String getInfo() {
+        return Info;
     }
 
-    public void setEan(String ean) {
-        Ean = ean;
+    public void setInfo(String info) {
+        Info = info;
     }
 
-    public String getNavn() {
-        return Navn;
+    public String getCatagory() {
+        return Catagory;
     }
 
-    public void setNavn(String navn) {
-        Navn = navn;
+    public void setCatagory(String catagory) {
+        Catagory = catagory;
     }
 
-    public String getNavn2() {
-        return Navn2;
+    public String getProductName() {
+        return ProductName;
     }
 
-    public void setNavn2(String navn2) {
-        Navn2 = navn2;
+    public void setProductName(String productName) {
+        ProductName = productName;
     }
 
-    public int getPris() {
-        return Pris;
+    public int getPrice() {
+        return Price;
     }
 
-    public void setPris(int pris) {
-        Pris = pris;
-    }
-
-    public int getVareHierkiId() {
-        return VareHierkiId;
-    }
-
-    public void setVareHierkiId(int vareHierkiId) {
-        VareHierkiId = vareHierkiId;
+    public void setPrice(int price) {
+        Price = price;
     }
 }

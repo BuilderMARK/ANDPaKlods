@@ -7,23 +7,26 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
-private Button button;
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+private Button LoginBtn,CreateSale;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        button = findViewById(R.id.LoginBtn);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openLoginActivity2();
+        LoginBtn = findViewById(R.id.LoginBtn);
+        CreateSale = findViewById(R.id.BtnCreate);
+        LoginBtn.setOnClickListener(this);
+        CreateSale.setOnClickListener(this);
             }
-        });
-    }
 
-    private void openLoginActivity2() {
-        Intent intent = new Intent(this, Login.class);
-        startActivity(intent);
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()){
+            case R.id.BtnCreate:
+                startActivity(new Intent(this,CreateSaleOffer.class));
+                break;
+            case R.id.LoginBtn:
+                startActivity(new Intent(this,SignUp.class));
+        }
     }
 }
