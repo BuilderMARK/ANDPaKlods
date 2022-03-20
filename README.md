@@ -1,5 +1,8 @@
 # ANDPaKlods
 
+Ideen er at skabe en platform hvorpå man kan sælge og købe brugte biler, og får at skabe en samlet platform, hvorpå bilsælgere alle kan oprette deres announcer. Derved får slutbrugeren mulighed for at se hele biludvalget uden at skulle besøge mange forskellige hjemmesider.
+
+
 
 1.       Som en bruger vil jeg have mulighed for at Oprette et salgsoplæg.
  
