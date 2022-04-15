@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ANDPaKlods">
         <activity
+            android:name=".allItems"
+            android:exported="false" />
+        <activity
             android:name=".SignUpWithMail"
             android:exported="false" />
         <activity
@@ -21,7 +24,7 @@
             android:name=".SignUp"
             android:exported="false" />
         <activity
-            android:name="com.example.andpaklods.Items"
+            android:name=".Items"
             android:exported="false" />
         <activity
             android:name=".Login"

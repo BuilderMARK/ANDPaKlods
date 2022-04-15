@@ -18,4 +18,35 @@ public class Item
         // Default constructor required for calls to DataSnapshot.getValue(Item.class)
     }
 
+    public String getInfo() {
+        return Info;
+    }
+
+    public void setInfo(String info) {
+        Info = info;
+    }
+
+    public String getCatagory() {
+        return Catagory;
+    }
+
+    public void setCatagory(String catagory) {
+        Catagory = catagory;
+    }
+
+    public String getProductName() {
+        return ProductName;
+    }
+
+    public void setProductName(String productName) {
+        ProductName = productName;
+    }
+
+    public String getPrice() {
+        return Price;
+    }
+
+    public void setPrice(String price) {
+        Price = price;
+    }
 }
