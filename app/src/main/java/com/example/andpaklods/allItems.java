@@ -27,6 +27,9 @@ public class allItems extends AppCompatActivity {
         itemPost.add(new Item("Testinfo 3","TestCategory3","TestProductName3","TestPrice3"));
         itemPost.add(new Item("Testinfo 4","TestCategory4","TestProductName4","TestPrice4"));
         itemPost.add(new Item("Testinfo 5","TestCategory5","TestProductName5","TestPrice5"));
+        itemPost.add(new Item("Testinfo 6","TestCategory6","TestProductName6","TestPrice6"));
+        itemPost.add(new Item("Testinfo 7","TestCategory7","TestProductName7","TestPrice7"));
+        itemPost.add(new Item("Testinfo 8","TestCategory8","TestProductName8","TestPrice8"));
         CarAdapter adapter = new CarAdapter(itemPost);
         carRecyclerView.setAdapter(adapter);
 
